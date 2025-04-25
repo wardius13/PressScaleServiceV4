@@ -1,0 +1,14 @@
+﻿ALTER SERVER ROLE [sysadmin] ADD MEMBER [NT SERVICE\SQLWriter];
+
+
+GO
+ALTER SERVER ROLE [sysadmin] ADD MEMBER [NT SERVICE\Winmgmt];
+
+
+GO
+ALTER SERVER ROLE [sysadmin] ADD MEMBER [LAPTOP-MAC90EQP\Ward Baetens];
+
+
+GO
+ALTER SERVER ROLE [dbcreator] ADD MEMBER [tew];
+

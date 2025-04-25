@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [LAPTOP-MAC90EQP\Ward Baetens]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

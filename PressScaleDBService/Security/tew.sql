@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [tew]
+    WITH PASSWORD = N'xwC2aswbczJfxgofwz1icu#umsFT7_&#$!~<rYrybZ|x4It}', SID = 0x233F22AFDBA18546B13A09B27D356657, DEFAULT_LANGUAGE = [us_english];
+
