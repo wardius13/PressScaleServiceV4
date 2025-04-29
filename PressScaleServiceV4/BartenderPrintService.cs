@@ -8,6 +8,5 @@ namespace PressScaleServiceV4
 {
     internal class BartenderPrintService
     {
-
     }
 }

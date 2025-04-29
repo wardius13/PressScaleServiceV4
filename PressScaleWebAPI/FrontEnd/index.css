@@ -1,0 +1,33 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #004d00;
+    padding: 10px;
+    text-align: center;
+}
+
+    header img {
+        height: 50px;
+    }
+
+#content {
+    margin: 20px;
+}
+
+#jsGrid {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
