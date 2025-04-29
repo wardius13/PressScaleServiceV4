@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 
@@ -10,8 +11,7 @@ namespace PressScaleServiceV4.Services
 
         public SqlService()
         {
-            // 👇 PAS AAN met jouw servernaam en database
-            _connectionString = @"Server=.\SQLEXPRESS;Database=PressScaleDB;Trusted_Connection=True;";
+            _connectionString = "Server=LAPTOP-MAC90EQP\\TEW_SQLEXPRESS;Database=PressScaleDB;Trusted_Connection=True;";
         }
 
         public async Task SaveDataAsync(float gewicht, int aantalBalen, int materiaalID)
@@ -23,7 +23,7 @@ namespace PressScaleServiceV4.Services
 
             try
             {
-                using (var connection = new SqlConnection(_connectionString))
+                using (var connection = new SqlConnection(_connectionString))  // Let op _connectionString
                 using (var command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@Tijdstip", tijdstip);
@@ -42,5 +42,18 @@ namespace PressScaleServiceV4.Services
                 Console.WriteLine("❌ Database fout: " + ex.Message);
             }
         }
+
+        public async Task DeleteDataAsync(int id)
+        {
+
+        }
+    }
+    public class Meetdata
+    {
+        public int Id { get; set; }
+        public DateTime Tijdstip { get; set; }
+        public float Gewicht { get; set; }
+        public int AantalBalen { get; set; }
+        public int MateriaalID { get; set; }
     }
 }

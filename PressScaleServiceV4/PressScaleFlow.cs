@@ -106,5 +106,24 @@ namespace PressScaleServiceV4
                 }
             }
         }
+
+//        private bool TryPrintWeight(string weight, out string errorMessage)
+//        {
+
+//            var printParameters = new Dictionary<string, string>
+//            {
+//                { "T1", materiaalID.ToString()},
+//                { "T2", aantalBalen.ToString() },
+//                { "T3", gewicht.ToString() },
+//                { "T4", DateTime.Now.ToShortDateString() },
+//                { "T5", DateTime.Now.ToShortTimeString() }
+//            };
+
+//            //var result = printService.Print(printParameters);
+
+//            //errorMessage = result;
+
+//            //return errorMessage == null;
+//        }
     }
 }

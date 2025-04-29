@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PressScaleServiceV4
 {
-    internal class BartenderPrintService
+    internal class WebService
     {
     }
 }
